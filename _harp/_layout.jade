@@ -1,6 +1,13 @@
-doctype
+doctype html
 html
   head
-    link(rel="stylesheet" href="/main.css")
+    title Sam's Site
+    link(rel="stylesheet" href="css/main.css")
+    script(src='js/app.js')
+    
   body
-    != yield
+    block content
+      != yield
+    block footer
+      #footer
+        p Copyright (c) 2015
